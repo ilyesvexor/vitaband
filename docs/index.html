@@ -1,70 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>VitaBand — Sense calm. Live well.</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="VitaBand — a privacy-first smartwatch for mental & physical wellbeing. Prototype: ESP32, MAX30102, BME680." />
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="description" content="VitaBand — a privacy-first smartwatch prototype." />
 </head>
 <body>
   <header class="hero">
     <div class="container">
       <h1>VitaBand</h1>
       <p class="tagline">Sense calm. Live well.</p>
-      <p class="lead">A privacy-first wearable that tracks heart health, HRV, SpO₂ and environment — and helps you feel better, day by day.</p>
-      <p class="cta-row">
-        <a class="btn primary" href="#campaign">Join the waitlist</a>
-        <a class="btn ghost" href="#specs">Prototype specs</a>
-      </p>
     </div>
   </header>
-
   <main class="container">
-    <section id="campaign" class="card">
-      <h2>Pre-launch — Join the waitlist</h2>
-      <p>Sign up now and be first to get updates, early-bird pricing, and prototype testing invitations.</p>
-      <form id="signup" action="#" onsubmit="alert('This is a prototype form — replace with Mailchimp or Netlify Forms'); return false;">
-        <input type="email" placeholder="Email address" required />
-        <button type="submit" class="btn primary">Notify me</button>
-      </form>
-    </section>
-
-    <section id="specs" class="card">
-      <h2>Prototype snapshot</h2>
-      <ul>
-        <li>Core: ESP32-WROOM (BLE) — MAX30102 (HR & SpO₂) — BME680 (temp / humidity / VOC)</li>
-        <li>Battery: 3.7V LiPo, 300–500 mAh</li>
-        <li>Display: 1.3" 240×240 ST7789 (SPI)</li>
-        <li>Companion app: cross-platform (Flutter) — real-time BLE dashboard</li>
-      </ul>
-      <p class="muted">This is an early prototype — not a medical device.</p>
-    </section>
-
     <section class="card">
-      <h2>How it works</h2>
-      <p>VitaBand measures photoplethysmography (PPG) using the MAX30102 sensor to estimate heart rate and SpO₂, computes HRV features on-device for privacy, and captures ambient environment metrics to provide contextualized insights.</p>
+      <h2>النسخة التجريبية</h2>
+      <p>هذا مستودع مبدئي يحتوي على صفحة هبوط، وعينات للـ firmware، وتطبيق رفيق (Flutter)، وملفات BOM وملاحظات PCB.</p>
     </section>
-
-    <section class="card">
-      <h2>Roadmap</h2>
-      <ol>
-        <li>Prototype hardware & firmware (done)</li>
-        <li>Companion app & BLE integration (done)</li>
-        <li>PCB revision, enclosure, and user tests</li>
-        <li>Kickstarter campaign & pre-orders</li>
-      </ol>
-    </section>
-
     <footer class="card footnote">
-      <p>Repository: <a href="https://github.com/ilyesvexor/vitaband" target="_blank">github.com/ilyesvexor/vitaband</a></p>
-      <p class="muted">Made with care — VitaBand prototype components and software are for research and prototyping only. Not a medical device.</p>
+      <p>Repository: <a href="https://github.com/ilyesvexor/vitaband">github.com/ilyesvexor/vitaband</a></p>
     </footer>
   </main>
-
-  <script>
-    // small UX helper: prevent empty submit in prototype forms
-    document.getElementById('signup').addEventListener('submit', function(e){ e.preventDefault(); alert('Thanks — we would capture this via Mailchimp or Netlify Forms in production.'); });
-  </script>
 </body>
 </html>

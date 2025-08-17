@@ -1,0 +1,14 @@
+name: vitaband_companion
+description: Minimal companion scaffold for VitaBand
+publish_to: 'none'
+version: 0.0.1
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  # Add flutter_reactive_ble or flutter_blue for BLE support later
+
+flutter:
+  uses-material-design: true
