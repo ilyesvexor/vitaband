@@ -1,0 +1,40 @@
+:root{
+  --teal: #2DAF9C;
+  --slate: #0F1B28;
+  --sand: #F5EFE6;
+  --accent: #FFB86B;
+  --card-bg: #FFFFFF;
+  --muted: #6B7280;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--sand);color:var(--slate);-webkit-font-smoothing:antialiased}
+.container{max-width:960px;margin:0 auto;padding:24px}
+
+.hero{
+  background:linear-gradient(135deg,var(--teal),#46c6a8);
+  color:white;padding:56px 0 40px;border-bottom-left-radius:18px;border-bottom-right-radius:18px;
+}
+.hero .container{display:flex;flex-direction:column;gap:12px}
+.hero h1{margin:0;font-size:40px;letter-spacing:-0.5px}
+.tagline{opacity:0.95;margin:0;font-weight:600}
+.lead{max-width:720px;opacity:0.95}
+
+.card{background:var(--card-bg);border-radius:12px;padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(15,27,40,0.06)}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--teal);color:white}
+.btn.ghost{background:transparent;color:var(--slate);border:1px solid rgba(15,27,40,0.06)}
+.cta-row{margin-top:12px}
+footnote{font-size:12px}
+
+.muted{color:var(--muted);font-size:14px}
+form input[type="email"]{padding:10px;border-radius:8px;border:1px solid #e6e6e6;margin-right:8px;width:60%}
+form button{padding:10px 14px;border-radius:8px;border:none;background:var(--teal);color:white}
+
+/* Responsive tweaks */
+@media (max-width:640px){
+  .hero h1{font-size:28px}
+  form input[type="email"]{width:100%;margin-bottom:8px}
+  .cta-row{display:flex;flex-direction:column;gap:8px}
+}
